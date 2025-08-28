@@ -29,17 +29,14 @@ public class Main {
             }
             hasUpperCase = hasUppercase(password);
             if (!hasUpperCase) {
-                // TODO: print appropriate message
                 System.out.println("Password length Error: More Uppercase! ");
             }
             hasLowercase = hasLowercase(password);
             if (!hasLowercase) {
-                // TODO: print appropriate message
                 System.out.println("Password length Error: More Lowercase! ");
             }
             hasDigit = hasDigit(password);
             if (!hasLowercase) {
-                // TODO: print appropriate message
                 System.out.println("Password length Error: More Digit! ");
             }
 
@@ -51,13 +48,11 @@ public class Main {
 
     }
 
-    // TODO: Create method to check if password has minimum length
     public static boolean hasMinimumLength(String password) {
         return password.length() >= 8;
 
     }
 
-    // TODO: Create method to check if password has uppercase letter
     public static boolean hasUppercase(String password) {
         int i = 0;
         while (i < password.length()) {
@@ -71,7 +66,6 @@ public class Main {
 
     }
 
-    // TODO: Create method to check if password has lowercase letter
     public static boolean hasLowercase(String password) {
         int i = 0;
         while (i < password.length()) {
@@ -82,10 +76,8 @@ public class Main {
         }
         return false;
     }
-    // TODO: you do.
 
 
-    // TODO: Create method to check if password has at least one digit
     public static boolean hasDigit(String password) {
         int i = 0;
         while (i < password.length()) {
@@ -96,6 +88,5 @@ public class Main {
         }
         return false;
 
-        // TODO: you do.
     }
 }
